@@ -1,0 +1,24 @@
+// Reference: https://avro.apache.org/docs/current/spec.html
+{
+  "type": "record",
+  "name": "Order",
+  "protocol": "Order",
+  "compatibility": "BACKWARD",
+  "fields": [
+    {
+      "name": "ts",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "product_id",
+      "type": "int"
+    },
+    {
+      "name": "quantity",
+      "type": "int"
+    }
+  ]
+}
